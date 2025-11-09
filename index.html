@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>GMS</title>
+  <style>
+    body { background:#0b0f14; color:white; font-family:Arial; text-align:center; margin:0; padding:0; }
+    h1 { margin-top:30px; font-size:40px; letter-spacing:4px; }
+    .btn { display:block; width:200px; margin:20px auto; padding:15px; font-size:20px; background:#1a2330; border:2px solid #3b4b63; border-radius:10px; cursor:pointer; }
+    .btn:hover { background:#223045; }
+    #gameFrame { width:95%; height:600px; margin-top:30px; border:2px solid #3b4b63; border-radius:10px; background:white; }
+  </style>
+</head>
+<body>
+
+  <h1>GMS</h1>
+
+  <!-- Buttons to load games -->
+  <button class="btn" onclick="loadGame('file:///C:/Users/cbesb/OneDrive/Desktop/eaglercraft.1.5.2%20(1).html')">Minecraft</button>
+  <button class="btn" onclick="loadGame('file:///C:/Users/cbesb/OneDrive/Desktop/index%20(1).html')">FNAF</button>
+  <button class="btn" onclick="loadGame('file:///C:/Users/cbesb/OneDrive/Desktop/Slope.html')">Slope</button>
+
+  <iframe id="gameFrame"></iframe>
+
+  <script>
+    function loadGame(file) {
+      document.getElementById("gameFrame").src = file;
+    }
+  </script>
+
+</body>
+</html>
